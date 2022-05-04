@@ -21,19 +21,15 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout
       - uses: actions/checkout@v3
-      
       - name: Setup Node.js environment
       - uses: actions/setup-node@v3
         with:
           node-version: 16.15.0
           cache: 'npm'
       - run: npm install
-      
       - name: Nuxt build
-      - run: npm run build
-      
+        run: npm run build
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
