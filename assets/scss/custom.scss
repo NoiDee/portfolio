@@ -1,0 +1,63 @@
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+// $primary: #ee6c00;
+// $secondary: #002e46;
+
+// https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241
+$black: #212529;
+$light: #e0fbfc;
+$dark: #0E2730;
+$accent: #F3752B;
+$primary: #273D4F;
+$secondary: #BCDEFD;
+
+$theme-colors: (
+  "black": $black,
+  "light": $light,
+  "dark": $dark,
+  "accent": $accent,
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+$theme-colors: map-remove($theme-colors, "info", "warning", "danger");
+
+// 4. Include any optional Bootstrap CSS as needed
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+
+// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 6. Add additional custom code here
+.bg-light,
+.bg-accent,
+.bg-secondary {
+  color: $dark;
+}
+
+.bg-primary,
+.bg-dark {
+  color: $light;
+}
+
+.text-justify {
+  text-align: justify;
+}
