@@ -22,16 +22,19 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3
+      
+      - name: Setup PNPM
+      - uses: pnpm/action-setup@v2.1.0
         with:
-          node-version: 16.15.0
-          cache: 'npm'
-      - run: npm install
+          version: 7.0.0
+          run_install: |
+            - args: --shamefully-hoist
+          
       - name: Nuxt build
-        run: npm run build
+        run: pnpm run build
+        
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./output
