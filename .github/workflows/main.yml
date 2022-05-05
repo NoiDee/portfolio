@@ -31,10 +31,10 @@ jobs:
             args: [--shamefully-hoist]
           
       - name: Nuxt build
-        run: pnpm run build
+        run: pnpm run generate
         
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output/public
+          publish_dir: /dist
