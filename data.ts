@@ -35,7 +35,7 @@ export const resumeData: Resume = {
     {
       position: "Programmer",
       company: "Phase1 Philippines Inc.",
-      logo: "/public/images/phase1.webp",
+      logo: "/images/phase1.webp",
       dateHired: "10/15/2018",
       dateResigned: "Present",
       descriptions: [
@@ -50,7 +50,7 @@ export const resumeData: Resume = {
     {
       position: ".Net Developer",
       company: "PLDT (under WeSupport Inc.)",
-      logo: "/public/images/pldt.webp",
+      logo: "/images/pldt.webp",
       dateHired: "10/15/2017",
       dateResigned: "7/31/2018",
       descriptions: [
@@ -62,7 +62,7 @@ export const resumeData: Resume = {
     {
       position: "Data Analyst",
       company: "PLDT (under WeSupport Inc.)",
-      logo: "/public/images/pldt.webp",
+      logo: "/images/pldt.webp",
       dateHired: "2/6/2017",
       dateResigned: "9/29/2017",
       descriptions: [
@@ -75,7 +75,7 @@ export const resumeData: Resume = {
     {
       position: "IT Staff",
       company: "E-Global International Communications, Inc.",
-      logo: "/public/images/e-global.webp",
+      logo: "/images/e-global.webp",
       dateHired: "8/24/2015",
       dateResigned: "8/30/2016",
       descriptions: [
