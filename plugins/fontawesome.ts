@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faEnvelope, faMobile, faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelope,
+  faMobile,
+  faAngleUp,
+} from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 // You can add your icons directly in this plugin. See other examples for how you
@@ -7,6 +11,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(faEnvelope, faMobile, faAngleUp);
 
 // Register the component globally
-export default defineNuxtPlugin((nuxtApp) => {
+export const defineNuxtPlugin = (nuxtApp: any) => {
   nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon);
-})
+};
+
+export default defineNuxtPlugin;

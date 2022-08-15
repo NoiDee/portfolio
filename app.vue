@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { Resume } from "~~/model";
-import { resumeData } from "~~/data";
+import { Resume } from '~~/model';
+import { resumeData } from '~~/data';
+
 const resume = reactive<Resume>(resumeData);
 
 useHead({
   title: resume.name.getFullPartialMiddle(),
-  meta: [{ name: "description", content: resume.intro }],
+  meta: [{ name: 'description', content: resume.intro }],
 });
 </script>
 

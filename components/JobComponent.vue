@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Job } from "~~/model";
+import { Job } from '~~/model';
 
 interface JobComponentProps {
   job: Job;
@@ -36,5 +36,4 @@ defineProps<JobComponentProps>();
   </div>
 </template>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

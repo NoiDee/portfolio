@@ -8,14 +8,12 @@ const scrollToTop = () => {
 };
 
 const showButton = () => {
-  console.log(window.scrollY / 1200 < 1);
   isActive = window.scrollY / 1200 < 1;
 };
 
 if (typeof window !== `undefined`) {
   window.addEventListener(`scroll`, showButton);
 }
-
 </script>
 
 <template>
