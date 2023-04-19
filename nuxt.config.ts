@@ -1,13 +1,11 @@
-import { defineNuxtConfig } from 'nuxt';
+import { defineNuxtConfig } from 'nuxt/config';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  target: 'static',
-  router: {
-    base: '/portfolio/',
-  },
-  ssr: false,
-  css: ['@/assets/scss/custom.scss'],
+  css: [
+    '@/assets/scss/custom.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css',
+  ],
   typescript: {
     shim: false,
   },

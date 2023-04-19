@@ -48,12 +48,8 @@ useHead({
       <h1 class="display-4 text-white">Contact Me</h1>
       <div class="fw-light fs-4">
         <div>
-          <FontAwesomeIcon icon="envelope" class="text-accent" />
+          <font-awesome-icon icon="fa-solid envelope" class="text-accent" />
           <span class="ms-2">{{ resume.email }}</span>
-        </div>
-        <div>
-          <FontAwesomeIcon icon="mobile" class="text-accent" />
-          <span class="ms-2">{{ resume.mobile }}</span>
         </div>
       </div>
     </SectionComponent>

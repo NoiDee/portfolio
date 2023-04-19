@@ -1,18 +1,17 @@
+import { faEnvelope, faAngleUp, fas } from '@fortawesome/free-solid-svg-icons';
+import { library, config } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import {
-  faEnvelope,
-  faMobile,
-  faAngleUp,
-} from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
+
+// This is important, we are going to let Nuxt worry about the CSS
+config.autoAddCss = false;
 
 // You can add your icons directly in this plugin. See other examples for how you
 // can add other styles or just individual icons.
-library.add(faEnvelope, faMobile, faAngleUp);
+library.add(faEnvelope, faAngleUp, fas);
 
 // Register the component globally
 export const defineNuxtPlugin = (nuxtApp: any) => {
-  nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon);
+  nuxtApp.vueApp.component('font-awesome-icon', FontAwesomeIcon, {});
 };
 
 export default defineNuxtPlugin;

@@ -22,11 +22,10 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-regular-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/vue-fontawesome": "^3.0.1",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/vue-fontawesome": "latest-3",
     "bootstrap": "^5.2.0",
-    "nuxt": "3.0.0-rc.1"
+    "nuxt": "rc"
   }
 }
